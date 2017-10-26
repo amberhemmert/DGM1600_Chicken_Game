@@ -13,6 +13,8 @@ public class Runaway : MonoBehaviour
 
 	public Transform chickenPen;
 
+	public Transform Wolf;
+
 	void OnTriggerStay(Collider other)
 {
 		if (other.gameObject.name =="Player")
