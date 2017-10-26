@@ -26,8 +26,9 @@ public class Follow : MonoBehaviour
 			transform.LookAt(Player);
 			transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
 		}	
-}	
-
+	
+		
+}
 }
 	
 

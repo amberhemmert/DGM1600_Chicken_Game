@@ -11,7 +11,7 @@ public class Runaway : MonoBehaviour
 
 	public Transform Player;
 
-	public Transform Wolf;
+	public Transform chickenPen;
 
 	void OnTriggerStay(Collider other)
 {
@@ -28,6 +28,22 @@ public class Runaway : MonoBehaviour
 			transform.Translate(Vector3.back*moveSpeed*Time.deltaTime);
 		}	
 }	
+
+	 void OnCollisionEnter(Collision other)
+	{
+		if(other.gameObject.name =="Player"){
+
+			//Destroy(gameObject);
+			//ScoreManager.AddPoints(points);
+
+			transform.position = chickenPen.position;
+			transform.rotation = chickenPen.rotation;
+
+		}
+
+	}
+
+
 
 }
 	
