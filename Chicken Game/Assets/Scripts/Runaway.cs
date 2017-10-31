@@ -14,6 +14,7 @@ public class Runaway : MonoBehaviour
 	public Transform chickenPen;
 
 	public Transform Wolf;
+	public int points = 10;
 
 	void OnTriggerStay(Collider other)
 {
@@ -36,8 +37,9 @@ public class Runaway : MonoBehaviour
 		if(other.gameObject.name =="Player"){
 
 			//Destroy(gameObject);
-			//ScoreManager.AddPoints(points);
-
+			//Add points to score 
+			scoreManager.AddPoints(points);
+			//Send chicken to chicken pen
 			transform.position = chickenPen.position;
 			transform.rotation = chickenPen.rotation;
 
