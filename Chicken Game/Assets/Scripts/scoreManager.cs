@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChickenAI : MonoBehaviour {
+public class scoreManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
