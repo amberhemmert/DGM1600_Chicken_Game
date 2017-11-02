@@ -11,6 +11,9 @@ public class Follow : MonoBehaviour
 	public Transform Player;
 
 	public Transform Chicken;
+	public int damage;
+	public Transform target;
+	
 
 	void OnTriggerStay(Collider other)
 {
@@ -26,10 +29,23 @@ public class Follow : MonoBehaviour
 			transform.LookAt(Player);
 			transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
 		}	
-	
+	}
+	void OnCollisionEnter(Collision other)
+		{
+		if(other.gameObject.name=="Player"){
+			playerHealth.TakeDamage(damage);
+		}	
+		print("Woof Woof Woof");
+		var hit = other.gameObject;
+		var health = hit.GetComponent<playerHealth>();
+
+		if(health !=null){
+			health.TakeDamage(damage);
+		}
 		
-}
-}
+	}
+}	
+
 	
 
 
