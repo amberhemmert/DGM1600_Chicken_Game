@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Playerhealth : MonoBehaviour {
+public class playerHealth : MonoBehaviour {
 
 public const int maxHealth = 10;
 public int currentHealth = maxHealth;
@@ -22,7 +22,7 @@ public void TakeDamage (int amount)
 		currentHealth=0;
 		print("You're Dead Asshole!");
 	}
-	
+
  }
 
 }
