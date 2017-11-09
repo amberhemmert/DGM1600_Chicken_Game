@@ -19,6 +19,8 @@ void OnTriggerStay(Collider other){
 		Turn();	
 	}
 	MoveForward();
+
+	
 }	
 
 }
