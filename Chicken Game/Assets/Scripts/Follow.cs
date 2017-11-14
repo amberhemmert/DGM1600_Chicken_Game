@@ -14,7 +14,7 @@ public class Follow : MonoBehaviour
 	public int damage;
 	public Transform target;
 	public Transform playerHealth;
-
+	
 	
 
 	void OnTriggerStay(Collider other)
@@ -32,21 +32,19 @@ public class Follow : MonoBehaviour
 			transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
 		}	
 	}
-	// void OnCollisionEnter(Collision other)
-	// 	{
-	// 	if(other.gameObject.name=="Player"){
-	// 		playerHealth.TakeDamage(damage);
-	// 	}	
-	// 	print("Woof Woof Woof");
-	// 	var hit = other.gameObject;
-	// 	var health = hit.GetComponent<playerHealth>();
+	void OnCollisionEnter(Collision other){
 
-	// 	if(health !=null){
-	// 		health.TakeDamage(damage);
-	// 	}
+		
+		print("Woof Woof Woof");
+		var hit = other.gameObject;
+		var health = hit.GetComponent<playerHealth>();
+
+		if(health !=null){
+			health.TakeDamage(damage);
+		}
 		
 	}
-
+}
 	
 
 
