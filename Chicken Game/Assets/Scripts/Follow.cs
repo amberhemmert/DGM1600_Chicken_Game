@@ -15,7 +15,7 @@ public class Follow : MonoBehaviour
 	public Transform target;
 	public Transform playerHealth;
 	
-	
+	public Transform pcHealth;
 
 	void OnTriggerStay(Collider other)
 {
@@ -34,17 +34,18 @@ public class Follow : MonoBehaviour
 	}
 	void OnCollisionEnter(Collision other){
 
-		
-		print("Woof Woof Woof");
+		if(other.gameObject.name =="Player"){
 		var hit = other.gameObject;
 		var health = hit.GetComponent<playerHealth>();
+		print("Woof Woof Woof");
 
-		if(health !=null){
-			health.TakeDamage(damage);
+		if(pcHealth !=null){
+		pcHealth.gameObject.GetComponent<playerHealth>().TakeDamage(damage);	
+	
 		}
-		
 	}
 }
-	
+
+}	
 
 
