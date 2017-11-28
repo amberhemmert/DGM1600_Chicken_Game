@@ -2,11 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class wolfHealth : MonoBehaviour {
+public class wolfHealth : MonoBehaviour{ 
 	public int currentHealth;
 	public int maxHealth = 3;
 	public Transform spawnPoint;
 	public int points;
+
+ void Start(){
+	currentHealth = maxHealth;
+ }
+
+	
+
+
+
+
+
 
 	public void TakeDamage(int amount){
 		currentHealth -= amount;
@@ -22,7 +33,6 @@ public class wolfHealth : MonoBehaviour {
 			//reset wolf health
 			currentHealth = maxHealth;
 		}
-	 }
-		
 	}
+}
 	
