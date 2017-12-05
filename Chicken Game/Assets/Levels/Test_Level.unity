@@ -265,7 +265,7 @@ Transform:
   m_LocalScale: {x: 1.277967, y: 1.2779671, z: 1.2559347}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &66504131
 Rigidbody:
@@ -308,7 +308,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   moveSpeed: 0
   Player: {fileID: 1577428707}
-  chickenPen: {fileID: 0}
+  chickenPen: {fileID: 663438561}
   Wolf: {fileID: 0}
   points: 10
 --- !u!1 &195880888
@@ -341,7 +341,7 @@ RectTransform:
   m_Children:
   - {fileID: 1970067773}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -586,7 +586,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 243985111}
   m_LocalRotation: {x: 0.012111809, y: 0.70696604, z: 0.012113077, w: 0.7070401}
-  m_LocalPosition: {x: 21.1, y: -0.14, z: -0.377}
+  m_LocalPosition: {x: 21.1, y: -0.09, z: -0.377}
   m_LocalScale: {x: 0.025233097, y: 1.0002661, z: 39.915897}
   m_Children: []
   m_Father: {fileID: 1888232668}
@@ -679,7 +679,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   moveSpeed: 0
   Player: {fileID: 1577428707}
-  chickenPen: {fileID: 0}
+  chickenPen: {fileID: 663438561}
   Wolf: {fileID: 0}
   points: 10
 --- !u!54 &406888378
@@ -771,7 +771,7 @@ Transform:
   m_LocalScale: {x: 1.277967, y: 1.2779671, z: 1.2559347}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &406888384
 MonoBehaviour:
@@ -909,7 +909,7 @@ Transform:
   m_LocalScale: {x: 20.565777, y: 23.435236, z: 27.09569}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663438560
 GameObject:
@@ -1057,7 +1057,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &991525975
 GameObject:
@@ -1135,11 +1135,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 991525975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.52, y: 10.8, z: 7.56}
+  m_LocalPosition: {x: -28.52, y: 10.8, z: 85.1}
   m_LocalScale: {x: 17.621237, y: 21.58372, z: 32.142853}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003135754
 GameObject:
@@ -1461,6 +1461,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1294774924}
+  - component: {fileID: 1294774923}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1468,6 +1469,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1294774923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294774922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ef96b17ae058a4981109cf9d83f53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winScore: 0
+  scoreManager: {fileID: 0}
+  winText: {fileID: 0}
 --- !u!4 &1294774924
 Transform:
   m_ObjectHideFlags: 0
@@ -1481,7 +1496,7 @@ Transform:
   - {fileID: 470458098}
   - {fileID: 663438561}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532563052
 GameObject:
@@ -1725,13 +1740,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1577428703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.9, y: 2.52, z: 55.43}
+  m_LocalPosition: {x: 69.9, y: 1.4, z: 55.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 844008708}
   - {fileID: 1532563057}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1577428708
 MonoBehaviour:
@@ -1762,6 +1777,80 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!1 &1718326959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1718326962}
+  - component: {fileID: 1718326961}
+  - component: {fileID: 1718326960}
+  m_Layer: 5
+  m_Name: Winner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1718326960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718326959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.90437, g: 1, b: 0.5407115, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Winner! Winner! Chicken Dinner!
+--- !u!222 &1718326961
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718326959}
+--- !u!224 &1718326962
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718326959}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 80, y: 16.848297}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1885980893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1933,7 @@ Transform:
   m_LocalScale: {x: 18.122654, y: 23.27016, z: 5.905869}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1885980898
 Rigidbody:
@@ -1945,7 +2034,7 @@ Transform:
   - {fileID: 243985112}
   - {fileID: 204629125}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0.99100006, y: 0.006, z: -0.97200006}
 --- !u!1 &1891018281
 GameObject:
@@ -2030,7 +2119,7 @@ Transform:
   m_LocalScale: {x: 0.8251704, y: 0.8251703, z: 1.7844303}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1891018286
 BoxCollider:
@@ -2171,11 +2260,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1969834304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.4, y: 21.5, z: -31.9}
+  m_LocalPosition: {x: 83.4, y: 23.5, z: -31.9}
   m_LocalScale: {x: 18.122654, y: 23.27016, z: 5.905869}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1970067772
 GameObject:
